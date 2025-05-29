@@ -26,8 +26,10 @@ B -->|Gemini API| C[AI Solution Generation]
 C --> D[Manager Dashboard]
 D --> E[Corrective Action Tracking]
 E --> F[Compliance Database]
+````
+---
 
-## 🌟 Key Features
+## 🌟Key Features
 
 ### Real-Time AI Diagnostics
 
@@ -38,7 +40,7 @@ def analyze_image_with_gemini(image_bytes):
     payload = {"image_data": image_base64, "task": "analyze_food_or_equipment_issue"}
     response = requests.post(api_url, json=payload, headers=headers)
     return response.json().get("solution")
-````
+```
 
 - 92% accuracy in identifying food/equipment issues using Gemini 2.0 Pro
 
